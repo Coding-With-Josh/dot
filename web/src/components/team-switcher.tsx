@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { ChevronsUpDown, Plus } from "lucide-react"
+import { ChevronDownIcon, ChevronsUpDown, Plus } from "lucide-react"
 
 import {
   DropdownMenu,
@@ -36,21 +36,21 @@ export function TeamSwitcher({
       <SidebarMenuItem>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <SidebarMenuButton
-              size="lg"
-              className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
-            >
-              <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
+    
+              <div className="bg-muted text-muted-foreground gap-1 flex flex-col items-center justify-between h-19 p-2.5 rounded-lg cursor-pointer hover:bg-muted/80 transition-all duration-300">
+              <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-primary-purple text-white">
                 <activeTeam.logo className="size-4" />
               </div>
-              <div className="grid flex-1 text-left text-sm leading-tight">
+              <ChevronDownIcon/>
+              </div>
+             
+              {/* <div className="grid flex-1 text-left text-sm leading-tight">
                 <span className="truncate font-semibold">
                   {activeTeam.name}
                 </span>
                 <span className="truncate text-xs">{activeTeam.plan}</span>
-              </div>
-              <ChevronsUpDown className="ml-auto" />
-            </SidebarMenuButton>
+              </div> */}
+              {/* <ChevronsUpDown className="ml-auto" /> */}
           </DropdownMenuTrigger>
           <DropdownMenuContent
             className="w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg"

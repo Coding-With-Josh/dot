@@ -6,7 +6,7 @@ import { ActivityChart } from "@/components/dashboard/activity-chart"
 import { Button } from "@/components/ui/button"
 import { Calendar } from "@/components/ui/calendar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowDown01Icon, ArrowDownIcon, ChevronDown, ChevronUp, Delete, MoreHorizontal, Plus, Trash2 } from 'lucide-react'
+import { ArrowDown01Icon, ArrowDownIcon, ChevronDown, ChevronDownIcon, ChevronUp, Delete, MoreHorizontal, Plus, Trash2 } from 'lucide-react'
 import { BitcoinIcon, EthereumIcon, TetherIcon, PolygonIcon } from "@/components/dashboard/icons"
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
       <div className="flex flex-row items-center justify-between w-full mb-6">
         <h1 className="text-2xl font-semibold text-white">DAO1 Activity Dashboard</h1>
         <div className="flex flex-row items-center justify-center gap-4">
-          <Button className="bg-muted text-muted-foreground gap-2">View 1 <ArrowDownIcon /></Button>
-          <Button size="icon" className="bg-transparent"><Trash2 /></Button>
+          <Button className="bg-muted text-muted-foreground gap-2">View 1 <ChevronDownIcon /></Button>
+          <Button size="icon" className="bg-transparent text-muted-foreground"><Trash2 /></Button>
           <Button className="bg-blue-600 hover:bg-blue-600/80 text-white rounded-md gap-3"> <Plus /> Add Widget</Button>
         </div>
       </div>
